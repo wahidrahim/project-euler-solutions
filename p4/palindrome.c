@@ -1,5 +1,6 @@
 #include <stdbool.h>
 
+// returns the number of digits in n
 int digits(int n)
 {
 	int digs = 1;
