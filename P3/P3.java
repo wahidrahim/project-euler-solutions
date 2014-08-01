@@ -9,8 +9,8 @@ final class P3 {
 	private static boolean isPrime(final long N) {
 		final long ROOT = (long) Math.sqrt(N);
 
-		for(long i = 2; i <= ROOT; i++) {
-			if(N % i == 0) return false;
+		for (long i = 2; i <= ROOT; i++) {
+			if (N % i == 0) return false;
 		}
 		return true;
 	}
@@ -20,8 +20,8 @@ final class P3 {
 		final long NUMROOT = (long) Math.sqrt(NUM);
 		long max = 0;
 
-		for(long i = 2; i <= NUMROOT; i++) {
-			if(NUM % i == 0 && isPrime(i) && max < i) max = i;
+		for (long i = 2; i <= NUMROOT; i++) {
+			if (NUM % i == 0 && isPrime(i) && max < i) max = i;
 		}
 		System.out.println(max);
 	}
