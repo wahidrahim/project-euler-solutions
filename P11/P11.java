@@ -33,7 +33,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 final class P11 {
-	static int[][] numGrid = new int[20][20];
+	private static int[][] numGrid = new int[20][20];
 
 	private enum Direction {
 		UP, DOWN, LEFT, RIGHT, UPLEFT, UPRIGHT, DOWNLEFT, DOWNRIGHT
