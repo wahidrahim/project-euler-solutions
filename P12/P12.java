@@ -49,7 +49,7 @@ final class P12 {
 		int nTriNum = 0;
 
 		for (int n = 1; maxFactors <= 500; ++n) {
-			nTriNum = (n * (n + 1)) / 2;
+			nTriNum += n;
 			int factors = factorsOfNum(nTriNum);
 
 			if (factors > maxFactors) maxFactors = factors;
