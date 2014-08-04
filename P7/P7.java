@@ -9,8 +9,8 @@
 final class P7 {
 	static boolean isPrime(int n) {
 		int root = (int) Math.sqrt(n);
-		for(int i = 2; i <= root; i++) {
-			if(n % i == 0) return false;
+		for (int i = 2; i <= root; i++) {
+			if (n % i == 0) return false;
 		}
 		return true;
 	}
@@ -21,8 +21,8 @@ final class P7 {
 
 		do {
 			p++;
-			if(isPrime(p)) nth_prime--;
-		} while(nth_prime > 0);
+			if (isPrime(p)) nth_prime--;
+		} while (nth_prime > 0);
 
 		System.out.println(p);
 	}
