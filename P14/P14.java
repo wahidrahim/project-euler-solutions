@@ -18,6 +18,7 @@ final class P14 {
 
 		for (long start = 999999; start > 1; --start) {
 			int count = 1;
+
 			for (long n = start; n != 1; ++count) {
 				n = nextTerm(n);
 			}
