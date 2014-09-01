@@ -4,7 +4,7 @@ n = "731671765313306249192251196744265747423553491949349698352031277450632623957
 greatest_product = 0
 
 (n.length - 13).times do |i|
-	product =	n[i..i + 12].split("").reduce(1) { |pro, num| pro *= num.to_i }
+	product = n[i..i + 12].split("").reduce(1) { |pro, num| pro *= num.to_i }
 	greatest_product = product if product > greatest_product
 end
 
